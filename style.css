@@ -1,3 +1,5 @@
+
+
 /* header and footer */
 header, footer {
     background-color: #1F2937;
@@ -29,11 +31,11 @@ ul {
 
 /* general content */
 
-body, .content, .hero-left, .box-and-text {
+#boxes, body, .content, .hero-left, .box-and-text {
     display: flex;
     flex-direction: column;
 }
-#row-of-boxes, #call-to-action, #hero {
+ #row-of-boxes, #call-to-action, #hero {
     display: flex;
     flex-direction: row;
 }
@@ -56,14 +58,26 @@ h1 {
 
 /*thumbnails section */
 
+#boxes {
+    align-items: center;
+}
 .thumbnail {
     width: 100px;
+    border-radius: 5px;
+}
+#row-of-boxes {
+    gap: 20px;
 }
 
 /* quotes section*/
 #quotes {
     background-color: #E5E7EB;
 }
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+}
+
 
 /* CTA secton */
 #call-to-action {
