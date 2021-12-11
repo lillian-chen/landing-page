@@ -8,9 +8,27 @@ header, footer {
     display: flex;
     flex-direction: row;
     color: #F9FAF8;
+    align-items: center;
+}
+header {
+    justify-content: space-between;
+}
+
+footer {
+    justify-content: center;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
