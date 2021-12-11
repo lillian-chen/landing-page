@@ -1,8 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-}
-
+/* header and footer */
 header, footer {
     background-color: #1F2937;
     display: flex;
@@ -18,28 +14,6 @@ footer {
     justify-content: center;
 }
 
-#hero {
-    display: flex;
-    flex-direction: row;
-}
-
-.hero-left {
-    display: flex;
-    flex-direction: column;
-}
-#hero-img {
-    width: 400px;
-    height:auto;
-}
-
-#row-of-boxes {
-    display: flex;
-    flex-direction: row;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-}
 
 li {
     list-style-type: none;
@@ -52,3 +26,46 @@ ul {
 }
 
 
+
+/* general content */
+
+body, .content, .hero-left, .box-and-text {
+    display: flex;
+    flex-direction: column;
+}
+#row-of-boxes, #call-to-action, #hero {
+    display: flex;
+    flex-direction: row;
+}
+
+/* hero section */
+#hero-img {
+    width: 400px;
+    height: auto;
+}
+#hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+/*thumbnails section */
+
+.thumbnail {
+    width: 100px;
+}
+
+/* quotes section*/
+#quotes {
+    background-color: #E5E7EB;
+}
+
+/* CTA secton */
+#call-to-action {
+    background-color: #3882F6;
+}
