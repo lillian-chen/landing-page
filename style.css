@@ -7,6 +7,8 @@ header, footer {
     flex-direction: row;
     color: #F9FAF8;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom:10px;
 }
 header {
     justify-content: space-between;
@@ -22,6 +24,8 @@ header {
 
 footer {
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 
@@ -66,21 +70,24 @@ button {
     color: #E5E7EB;
     border: none;
     padding: 5px 20px;
-    margin-top: 20px;
     text-align: center;
     border-radius: 5px;
     width: fit-content;
 }
+.hero-left {
+    gap: 20px;
+}
 
 h1 {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 900;
     color: #F9FAF8;
 }
 h3 {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: 900;
     color:#1F2937;
+    margin: 0;
 }
 /*thumbnails section */
 
@@ -90,6 +97,8 @@ h3 {
 }
 .thumbnail {
     width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 5px;
 }
 #row-of-boxes {
@@ -109,6 +118,7 @@ h6 {
     font-size: 12px;
     color: #1F2937;
     font-weight: lighter;
+    margin: 0;
 }
 
 /* quotes section*/
@@ -133,5 +143,24 @@ h6 {
 /* CTA secton */
 #call-to-action {
     background-color: #3882F6;
+    margin: 30px 100px 30px 100px; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+h3.CTA, h6.CTA {
+    color:#F9FAF8;
+    margin-bottom: 5px;
+}
+.CTA-text {
+    padding: 20px 80px 20px 80px;
+}
+
+#CTA-button {
+    border: 1px solid #F9FAF8;
+    height: fit-content;
+   
+    
 }
