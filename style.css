@@ -10,6 +10,14 @@ header, footer {
 }
 header {
     justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 footer {
@@ -20,6 +28,8 @@ footer {
 li {
     list-style-type: none;
     padding-left: 0;
+    font-size: 12px;
+    font-weight: lighter;
 }
 ul {
     display: flex;
@@ -31,7 +41,7 @@ ul {
 
 /* general content */
 
-#boxes, body, .content, .hero-left, .box-and-text {
+#boxes, body, .content, .hero-left, .box-and-text, #quotes {
     display: flex;
     flex-direction: column;
 }
@@ -48,6 +58,18 @@ ul {
 #hero {
     background-color: #1F2937;
     color: #F9FAF8;
+    padding: 30px 100px 30px 100px;
+    gap: 20px;
+}
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: fit-content;
 }
 
 h1 {
@@ -55,31 +77,61 @@ h1 {
     font-weight: extra-bold;
     color: #F9FAF8;
 }
-
+h3 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color:#1F2937;
+}
 /*thumbnails section */
 
 #boxes {
     align-items: center;
+    padding: 30px 100px 30px 100px;
 }
 .thumbnail {
-    width: 100px;
+    width: 150px;
     border-radius: 5px;
 }
 #row-of-boxes {
     gap: 20px;
+    justify-self: flex-start;
+    
+}
+.box-and-text {
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    align-content: flex-start;
+
+}
+
+h6 {
+    font-size: 12px;
+    color: #1F2937;
+    font-weight: lighter;
 }
 
 /* quotes section*/
 #quotes {
     background-color: #E5E7EB;
+    justify-content: center;
+    padding: 30px 100px 30px 100px;   
 }
 .quote-text {
     font-size: 36px;
     font-style: italic;
+    font-weight: lighter;
 }
-
+.quote {
+    padding: 30px 100px 30px 100px;
+}
+.speaker {
+    text-align: right;
+    font-weight: bold;
+}
 
 /* CTA secton */
 #call-to-action {
     background-color: #3882F6;
+
 }
